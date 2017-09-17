@@ -1,6 +1,6 @@
 [Unit]
 Description=Shutdown
-After=network.target
+
 
 [Service]
 Environment=/home/pi/
