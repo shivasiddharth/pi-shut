@@ -26,7 +26,7 @@ then
 fi
 cd /home/pi/  
 sudo chmod +x /home/pi/pi-shut/scripts/service-installer.sh  
-sudo /home/pi/pi-shut/scripts/service-installer.sh  
+sudo /home/pi/pi-shut/scripts/service-installer.sh 
+sudo chmod +x /home/pi/pi-shut/scripts/shutdown.sh  
 sudo systemctl enable on-off-pushbutton.service  
-sudo systemctl start on-off-pushbutton.service  
-echo "Added the safe shutdown service......"  
+echo "Added the safe shutdown service. Start the service by entering 'sudo systemctl start on-off-pushbutton.service' in the terminal"  
