@@ -24,16 +24,9 @@ then
     echo "This script must run as $RUN_AS, trying to change user..."
     exec sudo -u $RUN_AS $0
 fi
-
-cd /home/pi/
-sudo apt-get update -y
-sudo apt-get install python-dev python-virtualenv -y
-virtualenv env 
-env/bin/python -m pip install --upgrade pip setuptools 
-source env/bin/activate
-pip install RPi.GPIO
-pip install pyaudio
-python -m pip install --upgrade google-assistant-sdk 
-python -m pip install --upgrade google-assistant-sdk[samples]
-python -m pip install --upgrade google-auth-oauthlib[tool]
-google-oauthlib-tool --client-secrets /home/pi/assistant.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+cd /home/pi/  
+sudo chmod +x /home/pi/pi-shut/scripts/service-installer.sh  
+sudo /home/pi/pi-shut/scripts/service-installer.sh  
+sudo systemctl enable on-off-pushbutton.service  
+sudo systemctl start on-off-pushbutton.service  
+echo "Added the safe shutdown service......"  
