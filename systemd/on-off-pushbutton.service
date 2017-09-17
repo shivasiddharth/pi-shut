@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Environment=/home/pi/
 Environment=PATH=/home/pi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-ExecStart=/bin/bash /home/pi/GassistPi/shutdown/shutdown.sh
-WorkingDirectory=/home/pi/GassistPi/
+ExecStart=/bin/bash /home/pi/pi-shut/shutdown.sh
+WorkingDirectory=/home/pi/pi-shut/
 Type=forking
 StandardOutput=inherit
 StandardError=inherit
