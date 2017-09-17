@@ -27,6 +27,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 repo_path="$PWD"
 
 for service in systemd/*.service; do
-  sed "s:/home/pi/GassistPi:${repo_path}:g" "$service" \
+  sed "s:/home/pi/pi-shut:${repo_path}:g" "$service" \
     > "/lib/systemd/system/$(basename "$service")"
 done
