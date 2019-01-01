@@ -11,7 +11,7 @@ Type=forking
 StandardOutput=inherit
 StandardError=inherit
 Restart=on-failure
-User=pi
+User=osmc
 
 [Install]
 WantedBy=multi-user.target
