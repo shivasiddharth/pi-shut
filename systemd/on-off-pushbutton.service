@@ -3,10 +3,10 @@ Description=Shutdown
 
 
 [Service]
-Environment=/home/pi/
-Environment=PATH=/home/pi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-ExecStart=/bin/bash /home/pi/pi-shut/scripts/shutdown.sh
-WorkingDirectory=/home/pi/pi-shut/
+Environment=/home/osmc/
+Environment=PATH=/home/osmc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/bin/bash /home/osmc/pi-shut/scripts/shutdown.sh
+WorkingDirectory=/home/osmc/pi-shut/
 Type=forking
 StandardOutput=inherit
 StandardError=inherit
