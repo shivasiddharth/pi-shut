@@ -13,4 +13,3 @@ sudo /home/pi/pi-shut/installer.sh
 ```
 sudo systemctl start on-off-pushbutton.service
 ```
-The following is available for OSMC also, please checkout the OSMC branch.  
